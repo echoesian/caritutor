@@ -11,7 +11,7 @@
 |
 */
 
-$router->get('/', function () use ($router) {
+/* $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
@@ -25,4 +25,6 @@ $router->post('foo', function () {
 
 $router->get('user/{id}', function ($id) {
     return 'User '.$id;
-});
+}); */
+
+$router->post('createuser', 'UserController@create');
